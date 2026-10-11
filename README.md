@@ -4,22 +4,24 @@
 
 Este projeto tem como objetivo analisar o funil de marketing da Olist, investigando a relação entre leads qualificados e negócios fechados.
 
-A proposta é utilizar análise de dados para compreender o processo de conversão, identificar padrões nas origens dos leads e gerar insights que possam apoiar decisões das áreas de marketing e vendas.
+A análise busca compreender o volume de leads, a conversão observada, a evolução temporal e o desempenho das diferentes origens, gerando insights que podem apoiar decisões das áreas de marketing e vendas.
 
 ## Problema de negócio
 
 - Quantos leads qualificados existem na base?
 - Quantos negócios foram fechados?
-- Qual é a proporção de leads qualificados associados a negócios fechados?
+- Qual é a taxa de conversão observada?
 - Como a entrada de leads evolui ao longo do tempo?
 - Quais origens apresentam maior volume de leads?
-- Existem diferenças no tempo de fechamento dos negócios conforme a origem?
+- Quais origens apresentam maior taxa de conversão?
+- Quanto tempo os negócios levam para ser fechados?
+- Existem diferenças no tempo de fechamento conforme a origem?
 
 ## Fonte de dados
 
 Dataset **Marketing Funnel by Olist**, disponibilizado no Kaggle.
 
-Os dados contêm informações sobre leads qualificados para marketing e negócios fechados.
+O projeto utiliza informações de leads qualificados e negócios fechados.
 
 ## Ferramentas utilizadas
 
@@ -30,31 +32,40 @@ Os dados contêm informações sobre leads qualificados para marketing e negóci
 - Power BI
 - Git e GitHub
 
+## Principais resultados
 
-## Indicadores planejados
+- **Leads qualificados:** 8.000
+- **Negócios fechados registrados:** 842
+- **Taxa de conversão observada:** 10,53%
+- **Tempo médio de fechamento:** 48,50 dias, considerando apenas registros em que a data de fechamento não é anterior à data de entrada do lead.
+- **Maior volume mensal de leads:** abril de 2018, com 1.352 leads registrados.
+- **Maior volume mensal de negócios fechados:** abril de 2018, com 207 negócios.
+- **Origem com maior volume de leads:** `organic_search`, com 2.296 leads.
+- **Origem conhecida com maior taxa de conversão observada:** `paid_search`, com 12,30%.
 
-- Quantidade de leads qualificados
-- Quantidade de negócios fechados
-- Taxa de conversão
-- Evolução mensal dos leads
-- Evolução mensal dos negócios fechados
-- Distribuição e conversão por origem
-- Tempo entre a entrada do lead e o fechamento, quando as datas disponíveis permitirem essa análise
+Esses resultados são descritivos e representam os dados disponíveis na base analisada.
 
-As fórmulas e regras de cálculo serão documentadas durante a análise, respeitando as limitações dos dados.
+## Dashboard
+
+O projeto inclui um dashboard desenvolvido no Power BI para apresentar os principais indicadores, a evolução mensal dos leads e dos negócios fechados, e o desempenho por origem.
+
+
+![Dashboard Marketing Funnel — Olist](power_bi/dashboard.png)
 
 ## Estrutura do projeto
 
-A estrutura será organizada para separar os dados originais, os dados tratados, os notebooks de análise, as consultas SQL e os arquivos do Power BI.
+O repositório reúne os arquivos de análise, as consultas SQL utilizadas para responder às perguntas de negócio e a documentação dos resultados e insights.
 
-## Limitações
+## Limitações da análise
 
-A ausência de um negócio fechado na base analisada não significa necessariamente que o lead foi perdido definitivamente.
+- A ausência de um negócio fechado na base analisada não significa necessariamente que o lead foi perdido definitivamente.
+- A taxa de conversão representa a proporção de leads associados a negócios fechados na base disponível; ela não deve ser interpretada automaticamente como a taxa final de conversão de todos os leads ao longo de todo o seu ciclo.
+- A cobertura temporal e a qualidade dos dados podem influenciar os resultados.
+- Existe pelo menos um registro em que a data de fechamento é anterior à data de entrada do lead. Esse registro foi excluído do cálculo do tempo médio de fechamento, sem alteração das datas originais.
+- A origem `unknown` representa uma atribuição desconhecida e não deve ser tratada como um canal de marketing identificado.
+- Não foram calculados CAC ou ROAS, pois não há dados adequados de investimento e receita para esses indicadores.
+- Diferenças observadas entre origens não demonstram, por si só, relações de causa e efeito.
 
-Os resultados dependerão da qualidade, do período de cobertura e do significado das informações disponíveis no dataset.
+## Status do projeto
 
-Indicadores de custos, como CAC e ROAS, não serão calculados sem dados adequados de investimento e receita.
-
-## Status
-
-Projeto em desenvolvimento para fins de aprendizado e portfólio de Análise de Dados.
+Análise exploratória, consultas SQL e dashboard desenvolvidos para fins de aprendizado e portfólio de Análise de Dados.
