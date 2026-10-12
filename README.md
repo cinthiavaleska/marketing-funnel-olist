@@ -54,11 +54,12 @@ O projeto inclui um dashboard desenvolvido no Power BI para apresentar os princi
 
 ## Recomendações para o negócio
 
-Com base na análise, recomendo aproveitar o potencial da busca orgânica, que apresentou o maior volume de leads, e avaliar ações para melhorar o acompanhamento dos leads de `paid_search`, que teve a maior taxa de conversão entre as origens conhecidas, de 12,30%. Uma iniciativa seria aproximar as equipes de marketing e vendas para entender como esses leads estão sendo atendidos e identificar oportunidades para aumentar a conversão.
+Com base nos resultados, recomendo aproveitar melhor os canais que já demonstram potencial. A busca orgânica trouxe o maior volume de leads, enquanto a busca paga (`paid_search`) apresentou a maior taxa de conversão entre as origens conhecidas, de 12,30%. Por isso, vale avaliar quais campanhas e palavras-chave da busca paga estão associadas a esse resultado e acompanhar seu desempenho antes de decidir sobre novos investimentos.
 
-Também recomendo melhorar o registro da origem dos leads classificados como `unknown`. Apesar de apresentarem uma taxa de conversão de 16,65%, não sabemos de quais canais eles vieram. Identificar essas origens permitiria avaliar melhor a contribuição de cada canal para os resultados.
+Outro ponto importante é melhorar o registro da origem dos leads classificados como `unknown`. Embora esse grupo tenha apresentado uma conversão de 16,65%, não é possível identificar qual canal gerou esses resultados. Corrigir essa informação ajudaria a comparar os canais de forma mais confiável e a direcionar melhor as ações de marketing.
 
-Por fim, o tempo médio observado de fechamento foi de 48,5 dias. Recomendo aproximar as equipes de vendas e relacionamento com o cliente para identificar possíveis dificuldades durante a contratação, como dúvidas sobre a plataforma, taxas ou etapas do processo, e avaliar ações para tornar essa jornada mais simples.
+Por fim, o tempo médio observado para fechamento foi de 48,5 dias. Recomendo que as equipes de vendas e relacionamento com o cliente avaliem as etapas da contratação para identificar possíveis dificuldades e oportunidades de simplificação. A partir disso, seria possível acompanhar se as mudanças reduzem o tempo de fechamento e contribuem para melhorar a conversão.
+
 
 **Um ponto importante é que a análise permite comparar volume de leads e taxas de conversão, mas não identificar quais canais são mais rentáveis.** 
 
