@@ -52,19 +52,28 @@ O projeto inclui um dashboard desenvolvido no Power BI para apresentar os princi
 
 ![Dashboard Marketing Funnel — Olist](power_bi/dashboard.png)
 
+## Recomendações para o negócio
+
+Com base na análise, recomendo aproveitar o potencial da busca orgânica, que apresentou o maior volume de leads, e avaliar ações para melhorar o acompanhamento dos leads de `paid_search`, que teve a maior taxa de conversão entre as origens conhecidas, de 12,30%. Uma iniciativa seria aproximar as equipes de marketing e vendas para entender como esses leads estão sendo atendidos e identificar oportunidades para aumentar a conversão.
+
+Também recomendo melhorar o registro da origem dos leads classificados como `unknown`. Apesar de apresentarem uma taxa de conversão de 16,65%, não sabemos de quais canais eles vieram. Identificar essas origens permitiria avaliar melhor a contribuição de cada canal para os resultados.
+
+Por fim, o tempo médio observado de fechamento foi de 48,5 dias. Recomendo aproximar as equipes de vendas e relacionamento com o cliente para identificar possíveis dificuldades durante a contratação, como dúvidas sobre a plataforma, taxas ou etapas do processo, e avaliar ações para tornar essa jornada mais simples.
+
+**Um ponto importante é que a análise permite comparar volume de leads e taxas de conversão, mas não identificar quais canais são mais rentáveis.** 
+
+
 ## Estrutura do projeto
 
 O repositório reúne os arquivos de análise, as consultas SQL utilizadas para responder às perguntas de negócio e a documentação dos resultados e insights.
 
 ## Limitações da análise
 
-- A ausência de um negócio fechado na base analisada não significa necessariamente que o lead foi perdido definitivamente.
-- A taxa de conversão representa a proporção de leads associados a negócios fechados na base disponível; ela não deve ser interpretada automaticamente como a taxa final de conversão de todos os leads ao longo de todo o seu ciclo.
-- A cobertura temporal e a qualidade dos dados podem influenciar os resultados.
-- Existe pelo menos um registro em que a data de fechamento é anterior à data de entrada do lead. Esse registro foi excluído do cálculo do tempo médio de fechamento, sem alteração das datas originais.
-- A origem `unknown` representa uma atribuição desconhecida e não deve ser tratada como um canal de marketing identificado.
-- Não foram calculados CAC ou ROAS, pois não há dados adequados de investimento e receita para esses indicadores.
-- Diferenças observadas entre origens não demonstram, por si só, relações de causa e efeito.
+- **Conversão observada:** a ausência de um negócio fechado na base não significa necessariamente que o lead foi perdido. Por isso, a taxa calculada representa os negócios registrados nos dados disponíveis, e não necessariamente a conversão final de todos os leads.
+- **Qualidade dos dados:** foi identificado pelo menos um registro em que a data de fechamento é anterior à data de entrada do lead. Esse registro foi desconsiderado no cálculo do tempo médio de fechamento, sem alteração das datas originais.
+- **Origem desconhecida:** os registros classificados como `unknown` não permitem identificar o canal de origem dos leads, limitando a avaliação do desempenho de cada canal.
+- **Rentabilidade dos canais:** a base não possui dados adequados de investimento em marketing e receita por canal. Portanto, não foi possível calcular indicadores como CAC e ROAS nem determinar quais canais geram maior retorno financeiro.
+- **Interpretação dos resultados:** as diferenças de volume e conversão entre as origens mostram associações observadas nos dados, mas não comprovam relações de causa e efeito.
 
 ## Status do projeto
 
